@@ -1,5 +1,4 @@
-import dotenv from 'dotenv-safe';
+import bot from "./bot";
 
-dotenv.config();
-console.log(process.env.TOKEN)
-console.log("1235");
+
+bot.launch().then(() => console.log(`Bot @${bot.botInfo?.username} lauched`))
